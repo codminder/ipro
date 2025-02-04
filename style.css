@@ -1,4 +1,3 @@
-
 body {
 	font-family: 'Roboto', 'sans-serif';
 	background-color: #35899c;
@@ -11,52 +10,62 @@ header {
 	z-index: 1;
 	width: 100%;
 	background-color: transparent;
-	transition: background-color 1s ease;	
+	transition: background-color 1s ease;
 }
 
 .avatar header p {
-	width:50%;
+	width: 50%;
 }
 
 .avatar img {
 	width: 200px;
 	height: 200px;
-
 }
+
 .scroll-indicator {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 50px;
-    border: 2px solid white;
-    border-radius: 25px;
-    opacity: 0.8;
-
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 50px;
+	border: 2px solid white;
+	border-radius: 25px;
+	opacity: 0.8;
 }
-
- 
 
 .scroll-indicator span {
-
-    width: 6px;
-
-    height: 6px;
-
-    background-color: white;
-
-    border-radius: 50%;
-
-    animation: scroll 1.5s infinite;
-
+	width: 6px;
+	height: 6px;
+	background-color: white;
+	border-radius: 50%;
+	animation: scroll 1.5s infinite;
 }
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
 .header-colored {
 	background-color: white;
 }
+
 header nav a {
 	background-color: white;
 	color: #333;
@@ -73,21 +82,18 @@ header nav {
 	justify-content: flex-end;
 	color: #fff;
 	gap: 10px;
-	/*margin-right: 30px;*/
 }
 
 div {
 	display: flex;
-	background-color: #373e57;
-	border: 1px solid black;
 }
+
 .avatar {
 	width: 100%;
-	height: 90vh;
+	height: 100vh;
 	background-color: #5274ab;
 	justify-content: center;
 	align-items: center;
-	display: block;
 }
 
 
@@ -101,14 +107,13 @@ div {
 	color: red;
 }
 
-
 .success-message {
 	color: green;
 }
 
-.table{
-	width: 500px;	
-	align: center;
+.table {
+	width: 500px;
+	text-align: center;
 	padding: 10px;
 	border: 1px solid #33696b;
 }
@@ -126,7 +131,7 @@ h1 h2 {
 }
 
 @keyframes slide-in {
-	to{
+	to {
 		left: 0;
 	}
 }
@@ -147,7 +152,7 @@ h1 h2 {
 		padding: 20px;
 		width: 500px;
 	}
-} 
+}
 
 @media(min-width: 426px) and (max-width: 768px) {
 	.example {
