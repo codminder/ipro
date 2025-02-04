@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio W. Roor</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body> 
+	<header id="header">
+		<nav>
+			<a href="#favoColors">Favorite colors</a>
+			<a href="#checkboes">Checkboxes</a>
+		</nav>
+	</header>
+
+	<div class="avatar">
+		<img src="foto.png" alt="Mijn foto.">
+		<div class="header">
+			<br>
+			<h1 id="portf">Portfolio W. Roor</h1>
+			<!--			<p>Mijn site gaat over mezelf</p> -->
+		<p id="last-visit"></p>
+		</div>
+	</div>
+	<div class="scroll-indicator"><span></span></div>
+
+	<div class="skillset slide-in-from-left-to-right">
+		<h2>Vaardigheden</h3>	
+		<ul>
+			<li>Lezen</li>
+			<li>Programmeren</li>vim and coc tips and tricks
+			<li>Reizen</li>
+		</ul>
+	</div>
+	
+	<div class="softskills slide-in-from-left-to-right hide-animation">
+		<h2>Softskills</h3>
+		<ol>
+			<li>Teamwork</li>
+			<li>Netwerk</li>
+			<li>Besluitvaardigheid</li>
+			<li>Analytisch vermogen</li>
+			<li>Strategisch denken</li>
+		</ol>
+	</div>
+
+	<div class="favorite-color slide-in-from-left-to-right hide-animation">
+		<h2 id="favoColors">Favorite Colors</h3>
+		<input type="radio" name="favorite-color"><br>
+		<input type="radio" name="favorite-color"><br>
+		<input type="radio" name="favorite-color"><br>
+	</div>
+
+	<div class="table">
+		<table class="table"> 
+			<tr>
+				<th>Werkgever</th>
+				<th>Functie</th>
+				<th>Startdatum</th>
+				<th>Einddatum</th>
+			</tr>
+			<tr>
+				<td>Van Vliet Potplanten</td>
+				<td>Administratief medewerker</td>
+				<td>01-06-2022</td>
+				<td>01-06-2024</td>
+			</tr>
+			</tr>	
+				<td>Enigma Flowers</td>
+				<td>Manager Verkoop</td>
+				<td>01-06-2017</td>
+				<td>01-06-2022</td>
+			<tr>
+				<td>Ed de Groot</td>
+				<td>Verkoper</td>
+				<td>01-06-2017</td>
+				<td>01-06-2022</td>			
+			</tr>
+		</table>
+	</div>
+		
+	<div class="submit-form">
+		<form id="contact-form" class="contact-form hide-animation" action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="b7c1dd2e-91c0-4687-a4ec-1768c23e2561">
+			<label for="name">Naam:</name>
+			<input type="text" name="name" id="name" required>
+
+			<label for="email">E-mail:</name>
+			<input type="email" name="email" id="email" required>
+
+			<label for="message" name="message">
+			<textarea id="message" name="message" required></textarea>
+
+			<p id="result"></p>
+			<button type="submit">Send</button>		
+		</form>
+	</div>
+	<a href="mailto:w.k.roor@gmail.com">w.k.roor@gmail.com</a></br>
+	<a href="tel:+31621482335">+31 6 21 48 23 35</a>	
+	<p id="form-error" class="form-error"> Een fout met het invullen van het formulier</p>
+	<p id="success-message" class="success-message"></p> <br>
+
+	<a href="https://www.google.nl" target="_blank">mijn link</a>
+	<footer>	
+		<div class="footer">
+			<p>&copy; <span id="year"></span>portfolio Wladimir</p>
+		</div>
+	</footer>
+	</body>
+		<script src="script.js"></script>
+	</html>

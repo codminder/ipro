@@ -1,0 +1,168 @@
+
+body {
+	font-family: 'Roboto', 'sans-serif';
+	background-color: #35899c;
+	margin: 0;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	background-color: transparent;
+	transition: background-color 1s ease;	
+}
+
+.avatar header p {
+	width:50%;
+}
+
+.avatar img {
+	width: 200px;
+	height: 200px;
+
+}
+.scroll-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 25px;
+    opacity: 0.8;
+
+}
+
+ 
+
+.scroll-indicator span {
+
+    width: 6px;
+
+    height: 6px;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    animation: scroll 1.5s infinite;
+
+}
+.header-colored {
+	background-color: white;
+}
+header nav a {
+	background-color: white;
+	color: #333;
+	text-decoration: none;
+}
+
+header nav a:hover {
+	background-color: lightblue;
+	color: #333;
+}
+
+header nav {
+	display: flex;
+	justify-content: flex-end;
+	color: #fff;
+	gap: 10px;
+	/*margin-right: 30px;*/
+}
+
+div {
+	display: flex;
+	background-color: #373e57;
+	border: 1px solid black;
+}
+.avatar {
+	width: 100%;
+	height: 90vh;
+	background-color: #5274ab;
+	justify-content: center;
+	align-items: center;
+	display: block;
+}
+
+
+.avatar img {
+	width: 200px;
+	height: 200px;
+	border-radius: 30%;
+}
+
+.form-error {
+	color: red;
+}
+
+
+.success-message {
+	color: green;
+}
+
+.table{
+	width: 500px;	
+	align: center;
+	padding: 10px;
+	border: 1px solid #33696b;
+}
+
+
+h1 h2 {
+	text-decoration: underline dotted blueviolet;
+}
+
+
+.slide-in-from-left-to-right {
+	left: -100%;
+	animation: slide-in 1.0s ease-in forwards;
+	position: relative;
+}
+
+@keyframes slide-in {
+	to{
+		left: 0;
+	}
+}
+
+.fade-in {
+	opacity: 0;
+	animation: fade-in 2s ease-in forwards;
+}
+
+@keyframes fade-in {
+	to {
+		opacity: 1;
+	}
+}
+
+@media (min-width: 769px) {
+	.example {
+		padding: 20px;
+		width: 500px;
+	}
+} 
+
+@media(min-width: 426px) and (max-width: 768px) {
+	.example {
+		padding: 10px;
+		width: 100%;
+	}
+}
+
+@media(max-width: 425px) {
+	body {
+		background-color: red;
+	}
+}
+
+
+.footer {
+	justify-content: center;
+}
